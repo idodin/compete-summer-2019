@@ -5,8 +5,8 @@ logo: /static/img/logo.png
 github: https://github.com/compete-mcgill
 about: Summer 2019
 
-baseurl: ""
-url: ""
+baseurl: "https://idodin.github.io/compete-summer-2019"
+url: "https://idodin.github.io/compete-summer-2019"
 
 allowsearch: true
 
