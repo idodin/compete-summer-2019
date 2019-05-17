@@ -1,0 +1,28 @@
+title: Compete McGill Summer Training 2019
+description: Site for Compete McGill Summer Training Material
+author: Compete McGill
+logo: /static/img/logo.png
+github: https://github.com/compete-mcgill
+about: Summer 2019
+
+baseurl: ""
+url: ""
+
+allowsearch: true
+
+disqus_shortname: aboutashu
+google_analytics: UA-72862926-1
+
+share:
+  twitter_username: \#
+  fb_appid: 000000000000
+
+
+enableTags: true
+tagarray: []
+
+paginate: 20
+per_page: 20
+paginate_path: "/page:num/"
+markdown: kramdown
+gems: [jekyll-paginate, jekyll-gist]
