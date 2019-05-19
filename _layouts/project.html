@@ -7,7 +7,6 @@ layout: default
     {{ content }}
 
     <div class="projects row">
-    {% include project_tags.html %}
     {% for post in paginator.posts %}
     <div class="project-item col-md-4 col-sm-6 col-xs-12" data-tags='{{ post.tags | jsonify | downcase }}'>
     	<div class="well project-outer">
