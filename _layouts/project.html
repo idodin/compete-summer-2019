@@ -51,7 +51,7 @@ layout: default
       {% endif %}
 
       {% assign tokens = page.url | split: "/" %}
-      {% assign base = tokens[1] | prepend: '/' | append: '/' %}
+      {% assign base = tokens[1] | prepend: '/' | prepend: site.baseurl | append: '/' %}
       <li><a href="{{base}}">First</a></li>
       
 
