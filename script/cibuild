@@ -24,5 +24,6 @@ cd _site
 git config user.email "imad.dodin@mail.mcgill.ca"
 git config user.name "Imad Dodin"
 git add --all
+git tag "Release 1.$TRAVIS_BUILD_NUMBER" -a
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
-git push --force origin gh-pages
+git push --force --tags  origin gh-pages
