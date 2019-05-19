@@ -13,3 +13,5 @@ before_script:
 script: ./script/cibuild
 exclude: [vendor]
 sudo: false
+notifications:
+  slack: competemcgill:wNWajErpGDlte46AowkyxMxP
