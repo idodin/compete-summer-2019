@@ -1,8 +1,8 @@
 <ul class="list-separator nav navbar-nav well well-primary {{ page.layout }}">
 {% for i in site.data.urls %}
 	{% assign current = nil %}
-	{% assign pageurl = page.url | split:'/' | last %}
-	{% assign menuurl = i.url | split:'/' | last %}
+	{% assign pageurl = page.url | split: 'index.html' | first | split:'/' | last %}
+	{% assign menuurl = i.url | split: 'index.html' | first | split:'/' | last %}
 	{% assign linkurl = nil %}
 	{% if i.url contains '://' %}
 	{% assign linkurl = i.url %}

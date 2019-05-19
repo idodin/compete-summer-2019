@@ -8,20 +8,20 @@ layout: default
 
     <div class="projects row">
     {% include project_tags.html %}
-    {% for i in site.data.projects %}
-    <div class="project-item col-md-4 col-sm-6 col-xs-12" data-tags='{{ i.tags | jsonify | downcase }}'>
+    {% for post in paginator.posts %}
+    <div class="project-item col-md-4 col-sm-6 col-xs-12" data-tags='{{ post.tags | jsonify | downcase }}'>
     	<div class="well project-outer">
     		<div class="project-inner">
     			<a href="/static/projects/{{ i.image }}" class="thickbox">
-    			<div class="project-img bordered" style="background-image: url('{{ site.baseurl }}/static/projects/{{ i.image }}');"></div>
+    			<div class="project-img bordered" style="background-image: url('{{ site.baseurl }}/static/projects/{{ post.image }}');"></div>
                 </a>
-                {% if i.url %} <a href="{{ i.url }}"> {% endif %}
-    			<h3 class="project-headlines">{{ i.name }}</h3>
-    			{% if i.url %} </a> {% endif %}
+                {% if post.url %} <a href="{{ i.url }}"> {% endif %}
+    			<h3 class="project-headlines">{{ post.title }}</h3>
+    			{% if url %} </a> {% endif %}
     			<div class="project-content">
     				<div class="tag-holder">
-    				{% if i.tags %} 
-    					{% for j in i.tags %}
+    				{% if post.tags %} 
+    					{% for j in post.tags %}
     					<span class="label tags tag-filter" data-tag="{{ j | downcase }}">{{ j }}</span>
     					{% endfor %}
     				{% endif %}
@@ -29,15 +29,59 @@ layout: default
     				
     			</div>
     			<div class="project-footer"> 
-    				{% if i.url %} 
-    				<a href="{{ i.url }}" class="btn btn-info btn-raised btn-sm project-link">View</a>
+    				{% if post.url %} 
+    				<a href="{{ post.url }}" class="btn btn-info btn-raised btn-sm project-link">View</a>
     				{% endif %}
-    				<span class="project-timeline">{{ i.date }}</span>
+    				<span class="project-timeline">{{ post.date }}</span>
     			</div>
     		</div>
     	</div>
         </div>
     {% endfor %}
+    </div>
+    <div class="row">
+    <!-- Pagination links -->
+    {% if paginator.total_pages > 1 %}
+    <ul class="pager">
+      {% if paginator.previous_page %}
+        <li class="previous">
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
+        </li>
+      {% else %}
+        <li class="previous disabled"><span aria-hidden="true">&laquo;</span></li>
+      {% endif %}
+
+      {% assign tokens = page.url | split: "/" %}
+      {% assign base = tokens[1] | prepend: '/' | append: '/' %}
+      <li><a href="{{base}}">First</a></li>
+      
+
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <li class="active">
+             <a>{{ page }}<span class="sr-only">(current)</span></a>
+          </li>
+        {% elsif page == 1 %}
+          <li><a href="{{base}}">{{ page }}</a></li>
+        {% else %}
+          <li>
+            <a href="{{ site.pagination.permalink | prepend: base | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+
+      <li><a href="{{ paginator.total_pages | prepend: base }}/">Last</a></li>
+
+      {% if paginator.next_page %}
+        <li class="next">
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
+        </li>
+      {% else %}
+        <li class="next disabled"><span>&raquo;</span></li>
+      {% endif %}
+    </ul>
+    {% endif %}
+</div><!-- end #home
     </div>
   </div>
 
