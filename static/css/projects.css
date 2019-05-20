@@ -37,7 +37,7 @@
     .project-outer .project-footer .project-timeline {
       display: inline-block;
       position: relative;
-      float: right;
+      float: left;
       font-size: 13px;
       font-style: italic;
       vertical-align: middle;

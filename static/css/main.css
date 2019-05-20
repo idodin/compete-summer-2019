@@ -1,3 +1,6 @@
+body .container .post-content{
+	padding: 30px;
+}
 .main.outer{padding-top: 50px;}
 .header-panel.shadow-z-2 {
     background-color: #3d156f;
