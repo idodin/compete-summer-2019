@@ -14,9 +14,9 @@ layout: default
     			<a href="/static/projects/{{ i.image }}" class="thickbox">
     			<div class="project-img bordered" style="background-image: url('{{ site.baseurl }}/static/projects/{{ post.image }}');"></div>
                 </a>
-                {% if post.url %} <a href="{{ i.url }}"> {% endif %}
+                {% if post.url %} <a href="{{ post.url }}"> {% endif %}
     			<h3 class="project-headlines">{{ post.title }}</h3>
-    			{% if url %} </a> {% endif %}
+    			{% if post.url %} </a> {% endif %}
     			<div class="project-content">
 				<!--
     				<div class="tag-holder">
@@ -30,10 +30,10 @@ layout: default
     				
     			</div>
     			<div class="project-footer"> 
-    				{% if post.url %} 
+    				<span class="project-timeline">{{ post.date }}</span>
+				{% if post.url %} 
     				<a href="{{ post.url }}" class="btn btn-info btn-raised btn-sm project-link">View</a>
     				{% endif %}
-    				<span class="project-timeline">{{ post.date }}</span>
     			</div>
     		</div>
     	</div>

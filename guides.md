@@ -1,13 +1,13 @@
 ---
 layout: project
-title: Problem Sets
-permalink: /problemsets/
+title: Guides
+permalink: /guides/
 pagination:
   enabled: true
-  category: problemsets
+  category: guides
   per_page: 6
   sort_field: date
   sort_reverse: true
 ---
 
-Find problem sets here.
+Find Guides here.

@@ -15,4 +15,9 @@
     "url": "/problemsets",
     "icon": "fa-desktop"
   },
+  {
+    "text": "Guides",
+    "url": "/guides",
+    "icon": "fa-book"
+  }
 ]
