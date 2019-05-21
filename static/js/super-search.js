@@ -64,6 +64,7 @@
     }
 
     var xmlhttp=new XMLHttpRequest();
+    console.log(baseurl);
     xmlhttp.open("GET",sitemap);
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState != 4) return;
