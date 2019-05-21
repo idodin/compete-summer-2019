@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Compete McGill Summer Training 2019</title>
+    <description>Site for Compete McGill Summer Training Material</description>
+    <link>https://idodin.github.io/</link>
+    <atom:link href="https://idodin.github.io/compete-summer-2019/sitemap.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 21 May 2019 05:19:04 +0000</pubDate>
+    <lastBuildDate>Tue, 21 May 2019 05:19:04 +0000</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+    
+      <item>
+        <title>Cool project 1</title>
+        <description>Cool project 1</description>
+        <link>https://idodin.github.io#</link>
+        <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+        
+        <category>Angular JS</category>
+        
+        <category>API</category>
+        
+      </item>
+    
+      <item>
+        <title>Cool project 2</title>
+        <description>Cool project 2</description>
+        <link>https://idodin.github.io#</link>
+        <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
+        
+        <category>Android</category>
+        
+        <category>PHP</category>
+        
+      </item>
+    
+      <item>
+        <title>Cool project 3</title>
+        <description>Cool project 3</description>
+        <link>https://idodin.github.io#</link>
+        <pubDate>Sun, 01 Jun 2014 00:00:00 +0000</pubDate>
+        
+        <category>HTML</category>
+        
+        <category>JQuery</category>
+        
+        <category>PHP</category>
+        
+      </item>
+    
+      <item>
+        <title>Cool project 4</title>
+        <description>Cool project 4</description>
+        <link>https://idodin.github.io</link>
+        <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
+        
+        <category>Android</category>
+        
+        <category>nodejs</category>
+        
+      </item>
+    
+  </channel>
+</rss>
