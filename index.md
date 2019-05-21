@@ -28,7 +28,7 @@ Please also join our **[Facebook Group](https://www.facebook.com/groups/85654580
 
 | Week Number | Start Date | End Date   | Sections                                                         | Problem Set |
 |-------------|------------|------------|------------------------------------------------------------------|-------------|
-| 1           | 15/05/2019 | 22/05/2019 |  2.2: Linear Data Structures <br/> 2.3: Non-Linear Data Structures| [Set]({{week1}})   |
+| 1           | 15/05/2019 | 22/05/2019 |  2.2: Linear Data Structures <br/> 2.3: Non-Linear Data Structures| [Set]({{site.baseurl}}{{week1}})   |
 
 
 
