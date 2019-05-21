@@ -11,9 +11,7 @@ layout: default
     <div class="project-item col-md-4 col-sm-6 col-xs-12" data-tags='{{ post.tags | jsonify | downcase }}'>
     	<div class="well project-outer">
     		<div class="project-inner">
-    			<a href="/static/projects/{{ i.image }}" class="thickbox">
     			<div class="project-img bordered" style="background-image: url('{{ site.baseurl }}/static/thumbnails/{{ post.image }}');"></div>
-                </a>
                 {% if post.url %} <a href="{{site.baseurl}}{{ post.url }}"> {% endif %}
     			<h3 class="project-headlines">{{ post.title }}</h3>
     			{% if post.url %} </a> {% endif %}
