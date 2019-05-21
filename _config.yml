@@ -20,4 +20,4 @@ pagination:
   markdown: kramdown
   enabled: true
 
-plugins: [jekyll-paginate-v2, jekyll-gist]
+plugins: [jekyll-paginate-v2, jekyll-gist, jemoji]
