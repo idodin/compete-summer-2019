@@ -5,58 +5,140 @@
     <description>Site for Compete McGill Summer Training Material</description>
     <link>https://idodin.github.io/</link>
     <atom:link href="https://idodin.github.io/compete-summer-2019/sitemap.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 21 May 2019 05:25:09 +0000</pubDate>
-    <lastBuildDate>Tue, 21 May 2019 05:25:09 +0000</lastBuildDate>
+    <pubDate>Tue, 21 May 2019 18:13:08 +0000</pubDate>
+    <lastBuildDate>Tue, 21 May 2019 18:13:08 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
-    
       <item>
-        <title>Cool project 1</title>
-        <description>Cool project 1</description>
-        <link>https://idodin.github.io#</link>
-        <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+        <title>Guide 1</title>
+        <description>&lt;h2 id=&quot;week-1-problem-sets&quot;&gt;Week 1 Problem Sets&lt;/h2&gt;
+
+&lt;h3 id=&quot;codeforces&quot;&gt;CodeForces&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/1104/problem/B&quot;&gt;CodeForces 1104B: Game with String&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/1100/problem/B&quot;&gt;CodeForces 1100B: Building a Contest&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/702/problem/B&quot;&gt;CodeForces 702B: Powers of Two&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/1007/problem/A&quot;&gt;CodeForces 1007A: Reorder the Array&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/1006/problem/C&quot;&gt;CodeForces 1006C: Three Parts of the Array&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/1041/problem/C&quot;&gt;CodeForces 1041C: Coffee Break&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/18/problem/C&quot;&gt;CodeForces 18C: Stripe&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/650/problem/A&quot;&gt;CodeForces 650A: Watchmen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;kattis&quot;&gt;Kattis&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/baloni&quot;&gt;Baloni&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/jollyjumpers&quot;&gt;JollyJumpers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/pivot&quot;&gt;Pivot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/backspace&quot;&gt;Backspace&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/ballotboxes&quot;&gt;Distributing Ballot Boxes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/candydivision&quot;&gt;Candy Division&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/compoundwords&quot;&gt;Compound Words&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;uva&quot;&gt;UVa&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=3778&quot;&gt;Army Buddies&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
+        <link>https://idodin.github.io/guides/linear%20data%20structures/non-linear%20data%20structures/2019/05/20/guide1.html</link>
+        <guid isPermaLink="true">https://idodin.github.io/guides/linear%20data%20structures/non-linear%20data%20structures/2019/05/20/guide1.html</guid>
         
-        <category>Angular JS</category>
         
-        <category>API</category>
+        <category>guides</category>
+        
+        <category>linear data structures</category>
+        
+        <category>non-linear data structures</category>
         
       </item>
     
       <item>
-        <title>Cool project 2</title>
-        <description>Cool project 2</description>
-        <link>https://idodin.github.io#</link>
-        <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
+        <title>Problem Set 2</title>
+        <description>&lt;h2 id=&quot;week-1-problem-sets&quot;&gt;Week 1 Problem Sets&lt;/h2&gt;
+
+&lt;h3 id=&quot;codeforces&quot;&gt;CodeForces&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/1104/problem/B&quot;&gt;CodeForces 1104B: Game with String&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/1100/problem/B&quot;&gt;CodeForces 1100B: Building a Contest&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/702/problem/B&quot;&gt;CodeForces 702B: Powers of Two&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/1007/problem/A&quot;&gt;CodeForces 1007A: Reorder the Array&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/1006/problem/C&quot;&gt;CodeForces 1006C: Three Parts of the Array&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/1041/problem/C&quot;&gt;CodeForces 1041C: Coffee Break&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/18/problem/C&quot;&gt;CodeForces 18C: Stripe&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/650/problem/A&quot;&gt;CodeForces 650A: Watchmen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;kattis&quot;&gt;Kattis&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/baloni&quot;&gt;Baloni&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/jollyjumpers&quot;&gt;JollyJumpers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/pivot&quot;&gt;Pivot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/backspace&quot;&gt;Backspace&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/ballotboxes&quot;&gt;Distributing Ballot Boxes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/candydivision&quot;&gt;Candy Division&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/compoundwords&quot;&gt;Compound Words&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;uva&quot;&gt;UVa&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=3778&quot;&gt;Army Buddies&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+        <link>https://idodin.github.io/problemsets/linear%20data%20structures/2019/05/15/problemset2.html</link>
+        <guid isPermaLink="true">https://idodin.github.io/problemsets/linear%20data%20structures/2019/05/15/problemset2.html</guid>
         
-        <category>Android</category>
         
-        <category>PHP</category>
+        <category>problemsets</category>
+        
+        <category>linear data structures</category>
         
       </item>
     
       <item>
-        <title>Cool project 3</title>
-        <description>Cool project 3</description>
-        <link>https://idodin.github.io#</link>
-        <pubDate>Sun, 01 Jun 2014 00:00:00 +0000</pubDate>
+        <title>Problem Set 1</title>
+        <description>&lt;h2 id=&quot;week-1-problem-sets&quot;&gt;Week 1 Problem Sets&lt;/h2&gt;
+
+&lt;h3 id=&quot;codeforces&quot;&gt;CodeForces&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/1104/problem/B&quot;&gt;CodeForces 1104B: Game with String&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/1100/problem/B&quot;&gt;CodeForces 1100B: Building a Contest&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/702/problem/B&quot;&gt;CodeForces 702B: Powers of Two&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/1007/problem/A&quot;&gt;CodeForces 1007A: Reorder the Array&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/1006/problem/C&quot;&gt;CodeForces 1006C: Three Parts of the Array&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/1041/problem/C&quot;&gt;CodeForces 1041C: Coffee Break&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/18/problem/C&quot;&gt;CodeForces 18C: Stripe&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeforces.com/contest/650/problem/A&quot;&gt;CodeForces 650A: Watchmen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;kattis&quot;&gt;Kattis&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/baloni&quot;&gt;Baloni&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/jollyjumpers&quot;&gt;JollyJumpers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/pivot&quot;&gt;Pivot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/backspace&quot;&gt;Backspace&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/ballotboxes&quot;&gt;Distributing Ballot Boxes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/candydivision&quot;&gt;Candy Division&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.kattis.com/problems/compoundwords&quot;&gt;Compound Words&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;uva&quot;&gt;UVa&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=3778&quot;&gt;Army Buddies&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+        <link>https://idodin.github.io/problemsets/linear%20data%20structures/non-linear%20data%20structures/2019/05/15/problemset1.html</link>
+        <guid isPermaLink="true">https://idodin.github.io/problemsets/linear%20data%20structures/non-linear%20data%20structures/2019/05/15/problemset1.html</guid>
         
-        <category>HTML</category>
         
-        <category>JQuery</category>
+        <category>problemsets</category>
         
-        <category>PHP</category>
+        <category>linear data structures</category>
         
-      </item>
-    
-      <item>
-        <title>Cool project 4</title>
-        <description>Cool project 4</description>
-        <link>https://idodin.github.io</link>
-        <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
-        
-        <category>Android</category>
-        
-        <category>nodejs</category>
+        <category>non-linear data structures</category>
         
       </item>
     
