@@ -26,16 +26,5 @@ layout: null
         {% endfor %}
       </item>
     {% endfor %}
-    {% for project in site.data.projects %}
-      <item>
-        <title>{{ project.name | xml_escape }}</title>
-        <description>{{ project.name | xml_escape }}</description>
-        <link>{{ project.url | prepend: site.url }}</link>
-        <pubDate>{{ project.date | date_to_rfc822 }}</pubDate>
-        {% for tag in project.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-      </item>
-    {% endfor %}
   </channel>
 </rss>
