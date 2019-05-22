@@ -1,18 +1,14 @@
 [
   {
     "icon": "fa-facebook",
-    "link": ""
+    "link": "https://www.facebook.com/groups/856545804677764/"
   },
   {
-    "icon": "fa-twitter",
-    "link": ""
+    "icon": "fa-instagram",
+    "link": "https://www.instagram.com/competemcgill/"
   },
   {
     "icon": "fa-linkedin",
-    "link": ""
-  },
-  {
-    "icon": "fa-stack-exchange",
-    "link": ""
+    "link": "https://www.linkedin.com/company/competemcgill/"
   }
 ]
