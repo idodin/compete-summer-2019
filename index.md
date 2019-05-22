@@ -7,9 +7,9 @@ title: Summer Training 2019
 
 Welcome to Compete McGill's 2019 Summer Training!
 
-Over the course of the Summer, we hope to teach you some of the Core Algorithmic knowledge for use in Competitive Programming. **In particular**, we hope to teach you how to **write the Algorithms in code**!
+Over the course of the Summer, we hope to teach you some of the Core Algorithms used in Competitive Programming. **In particular**, how to **implement them in code**!
 
-Due to limited resources, you'll **have to be a McGill Student or Alumni** to take part :cry: - but if you are, please do not hestitate to join us!
+Due to limited resources, we can only support ** McGill University students or alumni** :cry:, but if that describes you, don't hesitate to take part!
 
 ## How does it work?
 
@@ -33,8 +33,11 @@ Please also join our **[Facebook Group](https://www.facebook.com/groups/85654580
 </tr>
 {% for session in site.data.schedule %}
 {% assign settitle = "Problem Set " | append: session.number %}
-{% assign matchingsets = site.posts | where: "title", settitle %}
+{% assign matchingsets = site.categories.problemsets | where: "title", settitle %}
 {% assign set = matchingsets.first.url %}
+{% assign matchingsolns = site.categories.solutions | where: "title", settitle %}
+{% assign solnumber = matchingsolns | size %}
+{% assign soln = matchingsolns.first.url %}
 <tr>
     <td>{{ session.number }}</td>
     <td>{{ session.start }} </td>
@@ -49,6 +52,7 @@ Please also join our **[Facebook Group](https://www.facebook.com/groups/85654580
     <td>
         <ul>
             <li> <a href="{{site.baseurl}}{{set}}">Problem Set {{session.number}}</a></li>
+            {% if solnumber >0 %}<li> <a href="{{site.baseurl}}{{soln}}">Solution Set {{session.number}}</a></li> {% endif %}
         </ul>
     </td>
 </tr>
