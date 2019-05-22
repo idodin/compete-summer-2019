@@ -15,3 +15,4 @@ exclude: [vendor]
 sudo: false
 notifications:
   slack: competemcgill:wNWajErpGDlte46AowkyxMxP
+  email: false
