@@ -23,13 +23,36 @@ Please also join our **[Facebook Group](https://www.facebook.com/groups/85654580
 
 ## Schedule (So Far...)
 
-{% assign week1 = site.posts | where: "title", "Problem Set 1" %}
-{% assign week1 = week1.first.url %}
-
-| Week Number | Start Date | End Date   | Sections                                                         | Problem Set |
-|-------------|------------|------------|------------------------------------------------------------------|-------------|
-| 1           | 15/05/2019 | 22/05/2019 |  2.2: Linear Data Structures <br/> 2.3: Non-Linear Data Structures| [Set]({{site.baseurl}}{{week1}})   |
-
-
+<table>
+<tr> 
+    <th>Week Number</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Sections</th>
+    <th>Problem Set</th>
+</tr>
+{% for session in site.data.schedule %}
+{% assign settitle = "Problem Set " | append: session.number %}
+{% assign matchingsets = site.posts | where: "title", settitle %}
+{% assign set = matchingsets.first.url %}
+<tr>
+    <td>{{ session.number }}</td>
+    <td>{{ session.start }} </td>
+    <td>{{ session.end }} </td>
+    <td>
+        <ul>
+        {% for section in session.sections %} 
+            <li> {{ section }} </li>
+        {% endfor %}
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li> <a href="{{site.baseurl}}{{set}}">Problem Set {{session.number}}</a></li>
+        </ul>
+    </td>
+</tr>
+{% endfor %}
+</table>
 
 

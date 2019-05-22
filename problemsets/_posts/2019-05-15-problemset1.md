@@ -7,9 +7,9 @@ categories:
 image: logo.png
 ---
 
-## Week 1 Problem Sets
+# Week 1 Problem Sets
 
-### CodeForces
+## CodeForces
 - [CodeForces 1104B: Game with String](https://codeforces.com/contest/1104/problem/B)
 - [CodeForces 1100B: Building a Contest](https://codeforces.com/contest/1100/problem/B)
 - [CodeForces 702B: Powers of Two](https://codeforces.com/contest/702/problem/B)
@@ -19,7 +19,7 @@ image: logo.png
 - [CodeForces 18C: Stripe](https://codeforces.com/contest/18/problem/C)
 - [CodeForces 650A: Watchmen](https://codeforces.com/contest/650/problem/A)
 
-### Kattis
+## Kattis
 - [Baloni](https://open.kattis.com/problems/baloni)
 - [JollyJumpers](https://open.kattis.com/problems/jollyjumpers)
 - [Pivot](https://open.kattis.com/problems/pivot)
@@ -28,5 +28,5 @@ image: logo.png
 - [Candy Division](https://open.kattis.com/problems/candydivision)
 - [Compound Words](https://open.kattis.com/problems/compoundwords)
 
-### UVa
+## UVa
 - [Army Buddies](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3778)
