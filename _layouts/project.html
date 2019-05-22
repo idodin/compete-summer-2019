@@ -32,6 +32,11 @@ layout: default
 				{% if post.url %} 
     				<a href="{{site.baseurl}}{{ post.url }}" class="btn btn-info btn-raised btn-sm project-link">View</a>
     				{% endif %}
+                    {% assign solns = site.categories.solutions | where: "title", post.title  %}
+                    {% assign soln = solns | first %}
+                    {% assign solnum = solns | size %}
+                    {% if solnum > 0 %} <a href="{{site.baseurl}}{{soln.url}}" class="btn btn-raised btn-success btn-sm project-link">Solutions</a> {% endif %}
+
     			</div>
     		</div>
     	</div>
