@@ -9,7 +9,7 @@ Welcome to Compete McGill's 2019 Summer Training!
 
 Over the course of the Summer, we hope to teach you some of the Core Algorithms used in Competitive Programming. **In particular**, how to **implement them in code**!
 
-Due to limited resources, we can only support ** McGill University students or alumni** :cry:, but if that describes you, don't hesitate to take part!
+Due to limited resources, we can only support **McGill University students or alumni** :cry:, but if that describes you, don't hesitate to take part!
 
 ## How does it work?
 
@@ -35,6 +35,7 @@ Please also join our **[Facebook Group](https://www.facebook.com/groups/85654580
 {% assign settitle = "Problem Set " | append: session.number %}
 {% assign matchingsets = site.categories.problemsets | where: "title", settitle %}
 {% assign set = matchingsets.first.url %}
+{% assign setnumber = matchingsets | size %}
 {% assign matchingsolns = site.categories.solutions | where: "title", settitle %}
 {% assign solnumber = matchingsolns | size %}
 {% assign soln = matchingsolns.first.url %}
@@ -51,7 +52,7 @@ Please also join our **[Facebook Group](https://www.facebook.com/groups/85654580
     </td>
     <td>
         <ul>
-            <li> <a href="{{site.baseurl}}{{set}}">Problem Set {{session.number}}</a></li>
+            {% if setnumber >0 %}<li> <a href="{{site.baseurl}}{{set}}">Problem Set {{session.number}}</a></li> {% endif %}
             {% if solnumber >0 %}<li> <a href="{{site.baseurl}}{{soln}}">Solution Set {{session.number}}</a></li> {% endif %}
         </ul>
     </td>

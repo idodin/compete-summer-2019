@@ -7,5 +7,13 @@
       "2.2: Linear Data Structures",
       "2.3: Non-Linear Data Structures"
     ]
+  },
+  {
+    "number": 2,
+    "start": "22/05/2019",
+    "end": "29/05/2019",
+    "sections": [
+      "3.5: Dynamic Programming"
+    ]
   }
 ]
