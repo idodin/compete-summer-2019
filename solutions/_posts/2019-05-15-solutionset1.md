@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Problem Set 1 Solutions
+title: Problem Set 1
 categories: 
   - linear data structures
   - non-linear data structures
