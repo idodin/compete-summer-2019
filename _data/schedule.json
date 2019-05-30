@@ -15,5 +15,16 @@
     "sections": [
       "3.5: Dynamic Programming"
     ]
+  },
+  {
+    "number": 3,
+    "start": "29/05/2019",
+    "end": "05/06/2019",
+    "sections": [
+      "2.4.1: Graph",
+      "4.2.1: Depth-first search",
+      "4.2.2: Breadth-first search",
+      "4.2.6: Bipartite graph check"
+    ]
   }
 ]
