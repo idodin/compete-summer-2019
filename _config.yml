@@ -20,4 +20,10 @@ pagination:
   markdown: kramdown
   enabled: true
 
+autopages:
+  enabled: true
+  categories:
+    layouts:
+      - 'project.html'
+  
 plugins: [jekyll-paginate-v2, jekyll-gist, jemoji]
