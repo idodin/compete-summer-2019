@@ -3,7 +3,7 @@ layout: post
 title: Problem Set 3
 categories:
   - graph
-image: logo.png
+image: week3.png
 ---
 
 # Week 3 Problem Sets
