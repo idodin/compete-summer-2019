@@ -3,7 +3,7 @@ layout: post
 title: Problem Set 2
 categories: 
   - dynamic programming
-image: logo.png
+image: week2.png
 ---
 
 # Week 2 Problem Sets

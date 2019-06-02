@@ -3,7 +3,6 @@ layout: post
 title: Problem Set 2
 categories: 
   - dynamic programming
-image: logo.png
 ---
 
 
