@@ -14,7 +14,7 @@ layout: default
     {% endif %}
     {% for post in paginator.posts %}
 
-    {% unless tokens contains false and post.categories contains 'solutions' %}
+    {% unless thisIsSolutions == false and post.categories contains 'solutions' %}
     <div class="project-item col-md-4 col-sm-6 col-xs-12" data-tags='{{ post.tags | jsonify | downcase }}'>
     	<div class="well project-outer">
     		<div class="project-inner">
