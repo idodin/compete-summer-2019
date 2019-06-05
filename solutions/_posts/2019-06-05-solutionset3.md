@@ -82,8 +82,146 @@ int main (void) {
 {% endhighlight %}
 
 ### [CodeForces 1167C: News Distribution](https://codeforces.com/problemset/problem/1167/C)
+{% highlight c++%}
+#include <bits/stdc++.h>
+using namespace std;
+typedef vector<int> vi;
+typedef vector<vi> vvi;
+/*
+ * We are using adjacency lists (vector<vector<int>>) here
+ * The problem is equivalent to finding the size of the connected components of each element
+ * This can be seen by simulating the news spreading process (it's BFS/DFS in disguise)
+ *
+ * Running a DFS once per element is too slow (O(n^2)) so we have to use a few tricks to save time
+ *
+ * We also shouldn't put 1 edge per each pair in a group (possibly O(k^2) edges)
+ * Here, sticking a path through the group is sufficient and faster (O(k) edges)
+ *
+ * The DFS trick is to only run DFS once per component
+ * Here, we "color" each connected component we find, since every element in that component will give the same value
+ * If we encounter a previously colored component, we can ignore it
+ * Otherwise, color it with DFS & count the number of elements
+ *
+ * We store the sizes of each color in a separate array
+ *
+ * In total, we will run into each vertex in DFS exactly once (when it is colored) and never again
+ * This approach is O(n+sum of k), which is fast enough
+ *
+ * When printing, retrieve the colors of each vertex and print the size of that colored component
+ */
+vvi g;
+vi c;
+int col[500500];
+int tp[500500];
+int dfs(int u, int co) {
+	int ctr = 1;
+	col[u] = co;
+	for(int i=0;i<g[u].size();i++) {
+		int v = g[u][i];
+		if(col[v] != -1) continue;
+		ctr += dfs(v,co);
+	}
+	return ctr;
+}
+int main() {
+	memset(col,-1,sizeof(col));
+	int n,m;
+	scanf("%d %d ",&n,&m);
+	g.assign(n,vi());
+	while(m--) {
+		int sz;
+		scanf("%d ",&sz);
+		for(int i=0;i<sz;i++) {
+			int t;
+			scanf("%d ",&t);
+			tp[i] = t-1;
+		}
+		for(int i=0;i<sz-1;i++) {
+			int a = tp[i],b = tp[i+1];
+			g[a].push_back(b);
+			g[b].push_back(a);
+		}
+	}
+	int id = 0;
+	for(int i=0;i<n;i++) {
+		if(col[i] == -1) {
+			c.push_back(dfs(i,id));
+			id++;
+		}
+		if(i > 0) {printf(" ");}
+		printf("%d",c[col[i]]);
+	}
+	printf("\n");
+}
+{% endhighlight %}
 
 ### [CodeForces 1143C: Queen](https://codeforces.com/problemset/problem/1143/C)
+{% highlight c++%}
+#include <bits/stdc++.h>
+using namespace std;
+typedef vector<int> vi;
+typedef vector<vi> vvi;
+bitset<100100> bs;
+vi rm;
+vvi g;
+/*
+ * We are using an adjacency list here
+ * This question doesn't actually require simulation of deletions
+ *
+ * Notice the following propertes of nodes after deletion:
+ * 1. A removable node stays removable after deleting a node
+ * 2. An unremovable node stays unremovable after deleting a node
+ * 
+ * 1 is true because:
+ * The children of the removed node aren't affected and
+ * The parent of the removed node will only get disrespectful children by definition i.e.
+ * If the parent is removable, it is still removable
+ *
+ * 2 is true because:
+ * An unremovable node is either respectful (doesn't depend on removals by definition) or
+ * One of its children is respectful (that child will never get moved away because of a removal)
+ *
+ * Thus, we can actually remove removable nodes in any order without affecting other nodes at all
+ * The strategy is then:
+ * Run a DFS to determine removable nodes
+ * This can be done by checking each child for each node and the node itself (This is O(n), we essentially look at each node twice)
+ * Add all removable nodes to a list and then sort the list
+ * Finally, print the sorted list
+ *
+ * Final complexity: O(n log n)
+ *
+ */
+void dfs(int u) {
+	bool r = bs[u];
+	for(int i=0;i<g[u].size();i++) {
+		int v = g[u][i];
+		r = r && bs[v];
+		dfs(v);
+	}
+	if(r) {rm.push_back(u);}
+}
+int main() {
+	int n;
+	scanf("%d ",&n);
+	g.assign(n,vi());
+	int rt;
+	for(int i=0;i<n;i++) {
+		int a,b;
+		scanf("%d %d ",&a,&b);
+		a--;
+		if(a >= 0) {g[a].push_back(i);} else {rt = i;}
+		if(b) bs.set(i);
+	}
+	dfs(rt);
+	sort(rm.begin(),rm.end());
+	if(rm.size() == 0) {printf("-1\n");return 0;}
+	for(int i=0;i<rm.size();i++) {
+		if(i > 0) printf(" ");
+		printf("%d",rm[i]+1);
+	}
+	printf("\n");
+}
+{% endhighlight %}
 
 ### [CodeForces 1144F: Graph Without Long Directed Paths](https://codeforces.com/problemset/problem/1144/F)
 {% highlight c++ %}
