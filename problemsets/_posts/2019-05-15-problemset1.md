@@ -4,7 +4,7 @@ title: Problem Set 1
 categories: 
   - linear data structures
   - non-linear data structures
-image: logo.png
+image: week1.png
 ---
 
 # Week 1 Problem Sets

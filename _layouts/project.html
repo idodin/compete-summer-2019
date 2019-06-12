@@ -7,7 +7,14 @@ layout: default
     {{ content }}
 
     <div class="projects row">
+    {% assign tokens = page.url | split: "/" %}
+    {% assign thisIsSolutions = false %}
+    {% if tokens contains 'solutions' %}
+        {% assign thisIsSolutions = true %}
+    {% endif %}
     {% for post in paginator.posts %}
+
+    {% unless thisIsSolutions == false and post.categories contains 'solutions' %}
     <div class="project-item col-md-4 col-sm-6 col-xs-12" data-tags='{{ post.tags | jsonify | downcase }}'>
     	<div class="well project-outer">
     		<div class="project-inner">
@@ -41,6 +48,7 @@ layout: default
     		</div>
     	</div>
         </div>    
+    {% endunless %}
     {% endfor %}
     </div>
     <div class="row">
@@ -55,7 +63,7 @@ layout: default
         <li class="previous disabled"><span aria-hidden="true">&laquo;</span></li>
       {% endif %}
 
-      {% assign tokens = page.url | split: "/" %}
+      
       {% assign base = tokens[1] | prepend: '/' | prepend: site.baseurl | append: '/' %}
       <li><a href="{{base}}">First</a></li>
       

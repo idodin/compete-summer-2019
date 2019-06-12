@@ -29,9 +29,9 @@ In **only our first year of running** our members have brought home lots of Awar
  - ACM-ICPC Preliminaries (Hamilton College) - 1st Place Team
  - CS-Games X-treme Theory Competition - 1st Place Team
  - Google Games - 1st Place Team
- - CS-Games: Sports Competition - 1st Place Team
+ - CS-Games: Sports Competition - 3rd Place Team
  - CS-Games: Artificial Intelligence Competition - 4th Place Team
- - Google CodeJam (Ongoing) - Round 2 Qualifications (Only 1500 out of 35000 Contestants qualify for Round 2)
+ - Google CodeJam - Round 2 Qualifications (Only 1500 out of 35000 Contestants qualify for Round 2)
  
 ## Getting Involved:
 

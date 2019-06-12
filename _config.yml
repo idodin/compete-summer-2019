@@ -5,8 +5,8 @@ logo: /static/img/logo.png
 github: https://github.com/compete-mcgill
 about: Summer 2019
 
-baseurl: "/compete-summer-2019"
-url: "https://idodin.github.io"
+baseurl: ""
+url: "https://summer.compete-mcgill.ca"
 
 allowsearch: true
 
@@ -20,4 +20,10 @@ pagination:
   markdown: kramdown
   enabled: true
 
+autopages:
+  enabled: true
+  categories:
+    layouts:
+      - 'project.html'
+  
 plugins: [jekyll-paginate-v2, jekyll-gist, jemoji]
