@@ -14,7 +14,7 @@ rm -rf _site
 mkdir _site
 
 # clone remote repo to "_site"
-git clone https://${GH_TOKEN}@github.com/Compete-McGill/compete-summer-2019.git --branch gh-pages _site
+git clone https://${GH_TOKEN}@github.com/idodin/compete-summer-2019.git --branch gh-pages _site
 
 # build with Jekyll into "_site"
 bundle exec jekyll build
@@ -23,8 +23,6 @@ bundle exec jekyll build
 cd _site
 git config user.email "president@compete-mcgill.ca"
 git config user.name "Compete McGill Bot"
-touch CNAME
-echo "summer.compete-mcgill.ca" >> CNAME
 git add --all
 git add -f category/*
 git commit -m "Travis #$TRAVIS_BUILD_NUMBER"
